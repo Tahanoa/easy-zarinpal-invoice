@@ -91,7 +91,10 @@ Display invoice payment page:
 
 ## 📷 Screenshots
 
-(Add screenshots here)
+<img width="1350" height="226" alt="Screenshot 2026-09-09 162409" src="https://github.com/user-attachments/assets/c22f34d6-6153-470c-8810-7e12653648f1" />
+
+<img width="1043" height="891" alt="Screenshot 2026-09-09 162341" src="https://github.com/user-attachments/assets/477c4fd4-872b-407b-9862-5bfc69c410d6" />
+
 
 ## 🔄 Changelog
 
