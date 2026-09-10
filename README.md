@@ -1,5 +1,8 @@
 # Easy ZarinPal Invoice
 
+<img width="1536" height="1024" alt="hirosection" src="https://github.com/user-attachments/assets/fe6b695a-329d-4a1a-9520-fe4b33034da9" />
+
+
 A modern WordPress invoice and payment link plugin with ZarinPal gateway integration and WooCommerce support.
 
 Create custom invoices, generate payment links, add WooCommerce products, calculate shipping costs, and receive online payments easily.
