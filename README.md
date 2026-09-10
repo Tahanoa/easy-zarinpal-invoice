@@ -4,6 +4,9 @@
 ![Version](https://img.shields.io/badge/version-1.5.7-green)
 ![License](https://img.shields.io/badge/license-GPL--2.0--or--later-orange)
 
+<img width="1672" height="941" alt="78b12c84-a8f2-42de-b5fb-9d7ea85196f2" src="https://github.com/user-attachments/assets/47521374-183f-49f8-a7a5-afcfd782b5fd" />
+
+
 A secure WordPress invoice and online payment management plugin with ZarinPal gateway integration and WooCommerce support.
 
 ---
