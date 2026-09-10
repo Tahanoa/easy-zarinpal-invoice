@@ -1,4 +1,4 @@
-# Easy ZarinPal Invoice
+# Easy Invoice for ZarinPal
 
 <img width="1536" height="1024" alt="hirosection" src="https://github.com/user-attachments/assets/fe6b695a-329d-4a1a-9520-fe4b33034da9" />
 
