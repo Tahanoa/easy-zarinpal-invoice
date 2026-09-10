@@ -1,0 +1,553 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Easy Invoice for ZarinPal 1.5.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/easy-invoice-for-zarinpal\n"
+"POT-Creation-Date: 2026-09-10 00:00+0000\n"
+"PO-Revision-Date: 2026-09-10 00:00+0000\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "%s Toman"
+msgstr "%s تومان"
+
+msgid "A selected product has no valid price."
+msgstr "یکی از محصولات انتخاب‌شده قیمت معتبر ندارد."
+
+msgid "A selected product price is outside the supported range."
+msgstr "قیمت یکی از محصولات خارج از محدوده پشتیبانی‌شده است."
+
+msgid "Actions"
+msgstr "عملیات"
+
+msgid "Active"
+msgstr "فعال"
+
+msgid "Add the configured fixed shipping fee to this invoice"
+msgstr "هزینه ثابت حمل‌ونقل تنظیم‌شده به این صورتحساب اضافه شود"
+
+msgid "Amount"
+msgstr "مبلغ"
+
+msgid "Amount (IRR)"
+msgstr "مبلغ (ریال)"
+
+msgid "Amount due"
+msgstr "مبلغ قابل پرداخت"
+
+msgid "Awaiting payment"
+msgstr "در انتظار پرداخت"
+
+msgid "Business name"
+msgstr "نام کسب‌وکار"
+
+msgid "Cancelled"
+msgstr "لغو شده"
+
+msgid "Configure the payment gateway, invoice page, shipping, privacy-friendly logs, and uninstall behavior."
+msgstr "درگاه پرداخت، برگه صورتحساب، حمل‌ونقل، لاگ‌های کمینه و رفتار هنگام حذف افزونه را تنظیم کنید."
+
+msgid "Configured"
+msgstr "تنظیم شده"
+
+msgid "Copy link"
+msgstr "کپی لینک"
+
+msgid "Could not connect to the payment gateway. Please try again."
+msgstr "اتصال به درگاه پرداخت برقرار نشد. لطفاً دوباره تلاش کنید."
+
+msgid "Could not copy the link."
+msgstr "کپی لینک انجام نشد."
+
+msgid "Create a new invoice"
+msgstr "ساخت صورتحساب جدید"
+
+msgid "Create a normal WordPress page with your preferred slug, place <code>[ezinv_invoice]</code> in its content, then select it here. The theme remains responsible for the header and footer."
+msgstr "یک برگه معمولی وردپرس با آدرس دلخواه بسازید، شورت‌کد <code>[ezinv_invoice]</code> را داخل آن قرار دهید و سپس همان برگه را اینجا انتخاب کنید. نمایش هدر و فوتر همچنان بر عهده قالب سایت است."
+
+msgid "Create invoice"
+msgstr "ساخت صورتحساب"
+
+msgid "Create secure payment links using a manual amount or WooCommerce products."
+msgstr "با مبلغ دستی یا محصولات ووکامرس، لینک پرداخت امن ایجاد کنید."
+
+msgid "Created"
+msgstr "تاریخ ایجاد"
+
+msgid "Created at"
+msgstr "تاریخ ایجاد"
+
+msgid "Current fixed shipping fee: %s Toman"
+msgstr "هزینه ثابت فعلی حمل‌ونقل: %s تومان"
+
+msgid "Customer"
+msgstr "مشتری"
+
+msgid "Customer name"
+msgstr "نام مشتری"
+
+msgid "Customer name, mobile, and email were erased. Financial transaction records were retained."
+msgstr "نام، شماره همراه و ایمیل مشتری پاک شد. سوابق مالی تراکنش حفظ شدند."
+
+msgid "Data on uninstall"
+msgstr "اطلاعات هنگام حذف افزونه"
+
+msgid "Debug logging"
+msgstr "ثبت لاگ اشکال‌زدایی"
+
+msgid "Delete"
+msgstr "حذف"
+
+msgid "Delete plugin settings and invoice database table when the plugin is deleted"
+msgstr "هنگام حذف افزونه، تنظیمات و جدول صورتحساب‌ها نیز حذف شوند"
+
+msgid "Delete this invoice?"
+msgstr "این صورتحساب حذف شود؟"
+
+msgid "Description"
+msgstr "توضیحات"
+
+msgid "Disabled by default. Merchant IDs, invoice tokens, Authority values, card numbers, names, email addresses, and phone numbers are never written by this logger."
+msgstr "به‌صورت پیش‌فرض غیرفعال است. این لاگر هرگز مرچنت آیدی، توکن صورتحساب، Authority، شماره کارت، نام، ایمیل یا شماره تلفن را ثبت نمی‌کند."
+
+msgid "Easy Invoice for ZarinPal customer contact data"
+msgstr "اطلاعات تماس مشتری در Easy Invoice for ZarinPal"
+
+msgid "Easy Invoice for ZarinPal invoices"
+msgstr "صورتحساب‌های Easy Invoice for ZarinPal"
+
+msgid "Email"
+msgstr "ایمیل"
+
+msgid "Enable redacted gateway debug logs in the PHP error log"
+msgstr "ثبت لاگ‌های محدود و بدون اطلاعات حساس در PHP error log فعال شود"
+
+msgid "Enter a positive whole-number amount in Toman."
+msgstr "یک مبلغ صحیح و مثبت به تومان وارد کنید."
+
+msgid "Enter a valid manual amount."
+msgstr "یک مبلغ دستی معتبر وارد کنید."
+
+msgid "External payment service"
+msgstr "سرویس پرداخت خارجی"
+
+msgid "Failed"
+msgstr "ناموفق"
+
+msgid "Fixed shipping"
+msgstr "حمل‌ونقل ثابت"
+
+msgid "Fixed shipping fee"
+msgstr "هزینه ثابت حمل‌ونقل"
+
+msgid "Gateway inquiry status: %s. Inquiry does not verify or mark a transaction paid."
+msgstr "وضعیت استعلام درگاه: %s. استعلام، تراکنش را وریفای یا پرداخت‌شده ثبت نمی‌کند."
+
+msgid "Gateway reference"
+msgstr "کد رهگیری درگاه"
+
+msgid "Gateway reference: %s"
+msgstr "کد رهگیری درگاه: %s"
+
+msgid "Inquiry"
+msgstr "استعلام"
+
+msgid "Invalid callback method."
+msgstr "متد Callback معتبر نیست."
+
+msgid "Invalid invoice token."
+msgstr "توکن صورتحساب معتبر نیست."
+
+msgid "Invalid invoice."
+msgstr "صورتحساب معتبر نیست."
+
+msgid "Invalid payment Authority."
+msgstr "Authority پرداخت معتبر نیست."
+
+msgid "Invalid payment callback."
+msgstr "Callback پرداخت معتبر نیست."
+
+msgid "Invalid request method."
+msgstr "متد درخواست معتبر نیست."
+
+msgid "Invoice"
+msgstr "صورتحساب"
+
+msgid "Invoice #%d"
+msgstr "صورتحساب شماره %d"
+
+msgid "Invoice ID"
+msgstr "شناسه صورتحساب"
+
+msgid "Invoice Settings"
+msgstr "تنظیمات صورتحساب"
+
+msgid "Invoice created successfully."
+msgstr "صورتحساب با موفقیت ساخته شد."
+
+msgid "Invoice deleted."
+msgstr "صورتحساب حذف شد."
+
+msgid "Invoice not found."
+msgstr "صورتحساب پیدا نشد."
+
+msgid "Invoice page"
+msgstr "برگه صورتحساب"
+
+msgid "Invoice payment state is incomplete."
+msgstr "اطلاعات وضعیت پرداخت صورتحساب کامل نیست."
+
+msgid "Invoice shortcode"
+msgstr "شورت‌کد صورتحساب"
+
+msgid "Invoice title"
+msgstr "عنوان صورتحساب"
+
+msgid "Invoice title is required."
+msgstr "عنوان صورتحساب الزامی است."
+
+msgid "Invoice total"
+msgstr "جمع صورتحساب"
+
+msgid "Invoices"
+msgstr "صورتحساب‌ها"
+
+msgid "Items / manual amount"
+msgstr "اقلام / مبلغ دستی"
+
+msgid "Leave this disabled if invoice records should survive plugin removal."
+msgstr "اگر می‌خواهید سوابق صورتحساب پس از حذف افزونه باقی بمانند، این گزینه را غیرفعال نگه دارید."
+
+msgid "Line total"
+msgstr "جمع ردیف"
+
+msgid "Link copied."
+msgstr "لینک کپی شد."
+
+msgid "Manual amount"
+msgstr "مبلغ دستی"
+
+msgid "Manual amount (Toman)"
+msgstr "مبلغ دستی (تومان)"
+
+msgid "Masked card number"
+msgstr "شماره کارت ماسک‌شده"
+
+msgid "Merchant ID must be exactly 36 characters and contain only letters, numbers, and hyphens."
+msgstr "مرچنت آیدی باید دقیقاً ۳۶ کاراکتر و فقط شامل حروف، اعداد و خط تیره باشد."
+
+msgid "Mobile"
+msgstr "شماره همراه"
+
+msgid "No invoices have been created yet."
+msgstr "هنوز صورتحسابی ایجاد نشده است."
+
+msgid "No products found."
+msgstr "محصولی پیدا نشد."
+
+msgid "No products selected yet."
+msgstr "هنوز محصولی انتخاب نشده است."
+
+msgid "Not active"
+msgstr "غیرفعال"
+
+msgid "Not configured"
+msgstr "تنظیم نشده"
+
+msgid "One of the selected WooCommerce products is no longer available."
+msgstr "یکی از محصولات انتخاب‌شده ووکامرس دیگر در دسترس نیست."
+
+msgid "Paid"
+msgstr "پرداخت شده"
+
+msgid "Paid at"
+msgstr "تاریخ پرداخت"
+
+msgid "Pay invoice online"
+msgstr "پرداخت آنلاین صورتحساب"
+
+msgid "Payment Invoices"
+msgstr "صورتحساب‌های پرداخت"
+
+msgid "Payment could not be verified."
+msgstr "پرداخت قابل وریفای نبود."
+
+msgid "Payment gateway returned HTTP status %d."
+msgstr "درگاه پرداخت وضعیت HTTP %d را برگرداند."
+
+msgid "Payment invoices"
+msgstr "صورتحساب‌های پرداخت"
+
+msgid "Payment status"
+msgstr "وضعیت پرداخت"
+
+msgid "Payment verification failed."
+msgstr "وریفای پرداخت ناموفق بود."
+
+msgid "Payment verification is already in progress."
+msgstr "وریفای پرداخت در حال انجام است."
+
+msgid "Payment verification is in progress. Please refresh this page shortly."
+msgstr "وریفای پرداخت در حال انجام است. کمی بعد صفحه را تازه‌سازی کنید."
+
+msgid "Payment verified successfully."
+msgstr "پرداخت با موفقیت وریفای شد."
+
+msgid "Payment was cancelled or not completed."
+msgstr "پرداخت لغو شد یا کامل نشد."
+
+msgid "Payment was verified by the gateway, but the local invoice record could not be updated. Please re-verify from the admin."
+msgstr "پرداخت توسط درگاه وریفای شد، اما ثبت محلی صورتحساب به‌روزرسانی نشد. لطفاً از پنل مدیریت وریفای مجدد انجام دهید."
+
+msgid "Payment was verified successfully."
+msgstr "پرداخت با موفقیت وریفای شد."
+
+msgid "Payments use ZarinPal. When a payer starts a payment, invoice amount, description, invoice ID, and optional email/mobile fields are sent to ZarinPal. No telemetry is sent to the plugin author."
+msgstr "پرداخت‌ها از زرین‌پال استفاده می‌کنند. هنگام شروع پرداخت، مبلغ، توضیحات، شناسه صورتحساب و در صورت وجود ایمیل/موبایل مشتری به زرین‌پال ارسال می‌شود. هیچ داده تله‌متری برای سازنده افزونه ارسال نمی‌شود."
+
+msgid "Pending"
+msgstr "در انتظار"
+
+msgid "Please select a published WordPress page for the invoice shortcode."
+msgstr "لطفاً یک برگه منتشرشده وردپرس برای شورت‌کد صورتحساب انتخاب کنید."
+
+msgid "Privacy policy"
+msgstr "سیاست حریم خصوصی"
+
+msgid "Product"
+msgstr "محصول"
+
+msgid "Product prices are read again from WooCommerce on submit and saved as a snapshot. Browser-submitted prices are never trusted."
+msgstr "هنگام ثبت صورتحساب، قیمت محصولات دوباره از ووکامرس خوانده و به‌صورت ثابت در صورتحساب ذخیره می‌شود. قیمت ارسالی از مرورگر قابل اعتماد در نظر گرفته نمی‌شود."
+
+msgid "Product search failed."
+msgstr "جستجوی محصول ناموفق بود."
+
+msgid "Product search results"
+msgstr "نتایج جستجوی محصول"
+
+msgid "Qty"
+msgstr "تعداد"
+
+msgid "Re-verify"
+msgstr "وریفای مجدد"
+
+msgid "Recent invoices"
+msgstr "صورتحساب‌های اخیر"
+
+msgid "Reference"
+msgstr "کد رهگیری"
+
+msgid "Remove"
+msgstr "حذف"
+
+msgid "Save settings"
+msgstr "ذخیره تنظیمات"
+
+msgid "Search by product name or SKU…"
+msgstr "جستجو با نام محصول یا SKU…"
+
+msgid "Search products"
+msgstr "جستجوی محصولات"
+
+msgid "Security check failed."
+msgstr "بررسی امنیتی ناموفق بود."
+
+msgid "Security check failed. Please reload the invoice page and try again."
+msgstr "بررسی امنیتی ناموفق بود. صفحه صورتحساب را دوباره بارگذاری کرده و تلاش کنید."
+
+msgid "Select a published invoice page in Settings and place <code>[ezinv_invoice]</code> on that page."
+msgstr "در تنظیمات یک برگه منتشرشده برای صورتحساب انتخاب کنید و شورت‌کد <code>[ezinv_invoice]</code> را داخل آن قرار دهید."
+
+msgid "Settings"
+msgstr "تنظیمات"
+
+msgid "Shipping"
+msgstr "حمل‌ونقل"
+
+msgid "Status"
+msgstr "وضعیت"
+
+msgid "Subtotal"
+msgstr "جمع جزء"
+
+msgid "Terms"
+msgstr "قوانین"
+
+msgid "The 36-character Merchant ID from your ZarinPal account."
+msgstr "مرچنت آیدی ۳۶ کاراکتری حساب زرین‌پال شما."
+
+msgid "The WooCommerce currency cannot be converted safely to Iranian Rial."
+msgstr "واحد پول ووکامرس به‌صورت امن قابل تبدیل به ریال ایران نیست."
+
+msgid "The configured shipping amount is too large."
+msgstr "مبلغ حمل‌ونقل تنظیم‌شده بیش از محدوده مجاز است."
+
+msgid "The email address is invalid."
+msgstr "آدرس ایمیل معتبر نیست."
+
+msgid "The final invoice amount is invalid."
+msgstr "مبلغ نهایی صورتحساب معتبر نیست."
+
+msgid "The fixed shipping amount is too large."
+msgstr "مبلغ ثابت حمل‌ونقل بیش از محدوده مجاز است."
+
+msgid "The gateway did not verify this payment."
+msgstr "درگاه این پرداخت را وریفای نکرد."
+
+msgid "The gateway inquiry returned an invalid response."
+msgstr "پاسخ استعلام درگاه معتبر نبود."
+
+msgid "The invoice could not be saved."
+msgstr "ذخیره صورتحساب انجام نشد."
+
+msgid "The invoice link is invalid."
+msgstr "لینک صورتحساب معتبر نیست."
+
+msgid "The invoice total is too large."
+msgstr "مبلغ کل صورتحساب بیش از محدوده مجاز است."
+
+msgid "The invoice was not found or has been removed."
+msgstr "صورتحساب پیدا نشد یا حذف شده است."
+
+msgid "The manual amount is outside the supported range."
+msgstr "مبلغ دستی خارج از محدوده پشتیبانی‌شده است."
+
+msgid "The mobile number format is invalid."
+msgstr "فرمت شماره همراه معتبر نیست."
+
+msgid "The payment callback could not be authenticated."
+msgstr "اصالت Callback پرداخت قابل تأیید نبود."
+
+msgid "The payment gateway has not been configured by the site administrator."
+msgstr "درگاه پرداخت توسط مدیر سایت تنظیم نشده است."
+
+msgid "The payment gateway is temporarily unavailable. Please try again."
+msgstr "درگاه پرداخت موقتاً در دسترس نیست. لطفاً دوباره تلاش کنید."
+
+msgid "The payment gateway returned an invalid response."
+msgstr "درگاه پرداخت پاسخ نامعتبر برگرداند."
+
+msgid "The payment result could not be confirmed yet. Please contact the site administrator before paying again."
+msgstr "نتیجه پرداخت هنوز قابل تأیید نیست. پیش از پرداخت مجدد با مدیر سایت تماس بگیرید."
+
+msgid "The selected product total is too large."
+msgstr "مبلغ محصول انتخاب‌شده بیش از محدوده مجاز است."
+
+msgid "This amount can be enabled or disabled for each invoice."
+msgstr "این مبلغ برای هر صورتحساب به‌صورت جداگانه قابل فعال یا غیرفعال کردن است."
+
+msgid "This invoice cannot be re-verified because its payment Authority is missing."
+msgstr "این صورتحساب به دلیل نداشتن Authority پرداخت، قابل وریفای مجدد نیست."
+
+msgid "This invoice has been paid successfully."
+msgstr "این صورتحساب با موفقیت پرداخت شده است."
+
+msgid "This invoice has no valid payment Authority to query."
+msgstr "این صورتحساب Authority معتبر برای استعلام ندارد."
+
+msgid "This site may use Easy Invoice for ZarinPal to create payment invoices. The plugin can store invoice details such as customer name, mobile number, email address, selected products, amounts, payment status, masked card number, and gateway reference ID in the site database."
+msgstr "این سایت ممکن است برای ساخت صورتحساب‌های پرداخت از Easy Invoice for ZarinPal استفاده کند. افزونه می‌تواند اطلاعاتی مانند نام مشتری، شماره همراه، ایمیل، محصولات انتخاب‌شده، مبالغ، وضعیت پرداخت، شماره کارت ماسک‌شده و کد رهگیری درگاه را در پایگاه داده سایت ذخیره کند."
+
+msgid "Toman"
+msgstr "تومان"
+
+msgid "Total"
+msgstr "جمع"
+
+msgid "Unit price"
+msgstr "قیمت واحد"
+
+msgid "Unknown"
+msgstr "نامشخص"
+
+msgid "Used only when no WooCommerce product is selected."
+msgstr "فقط زمانی استفاده می‌شود که هیچ محصول ووکامرسی انتخاب نشده باشد."
+
+msgid "Verifying"
+msgstr "در حال وریفای"
+
+msgid "View"
+msgstr "مشاهده"
+
+msgid "When a payment is initiated, the invoice amount, description, order ID, and—when provided—customer mobile number and email address are sent to ZarinPal to process the payment. The plugin does not send telemetry or analytics to the plugin author."
+msgstr "هنگام شروع پرداخت، مبلغ صورتحساب، توضیحات، شناسه سفارش و در صورت ارائه، شماره همراه و ایمیل مشتری برای پردازش پرداخت به زرین‌پال ارسال می‌شود. افزونه هیچ داده تله‌متری یا آماری برای سازنده افزونه ارسال نمی‌کند."
+
+msgid "WooCommerce"
+msgstr "ووکامرس"
+
+msgid "WooCommerce currency must be IRR, IRT/TMN, or provide a conversion filter."
+msgstr "واحد پول ووکامرس باید ریال (IRR)، تومان (IRT/TMN) باشد یا فیلتر تبدیل واحد پول تعریف شود."
+
+msgid "WooCommerce is not active."
+msgstr "ووکامرس فعال نیست."
+
+msgid "WooCommerce is not active. You can still create invoices with a manual amount."
+msgstr "ووکامرس فعال نیست. همچنان می‌توانید با مبلغ دستی صورتحساب بسازید."
+
+msgid "WooCommerce products"
+msgstr "محصولات ووکامرس"
+
+msgid "WooCommerce products were submitted, but WooCommerce is not active."
+msgstr "محصول ووکامرس ارسال شده اما ووکامرس فعال نیست."
+
+msgid "You are not allowed to perform this action."
+msgstr "شما اجازه انجام این عملیات را ندارید."
+
+msgid "You are not allowed to search products."
+msgstr "شما اجازه جستجوی محصولات را ندارید."
+
+msgid "ZarinPal"
+msgstr "زرین‌پال"
+
+msgid "ZarinPal Merchant ID"
+msgstr "مرچنت آیدی زرین‌پال"
+
+msgid "ZarinPal Merchant ID is not configured correctly."
+msgstr "مرچنت آیدی زرین‌پال به‌درستی تنظیم نشده است."
+
+msgid "ZarinPal Merchant ID is not configured. Invoices can be created, but payment cannot start until it is configured."
+msgstr "مرچنت آیدی زرین‌پال تنظیم نشده است. امکان ساخت صورتحساب وجود دارد، اما تا زمان تنظیم آن پرداخت آغاز نمی‌شود."
+
+msgid "— Select a page —"
+msgstr "— یک برگه انتخاب کنید —"
+
+msgid "%s item"
+msgid_plural "%s items"
+msgstr[0] "%s قلم"
+msgstr[1] "%s قلم"
+
+msgid "Clear debug log"
+msgstr "پاک‌کردن گزارش اشکال‌زدایی"
+
+msgid "Context"
+msgstr "زمینه"
+
+msgid "Debug log"
+msgstr "گزارش اشکال‌زدایی"
+
+msgid "Debug log cleared."
+msgstr "گزارش اشکال‌زدایی پاک شد."
+
+msgid "Disabled by default. Up to 100 redacted events are kept in a non-autoloaded WordPress option. Merchant IDs, invoice tokens, Authority values, card numbers, names, email addresses, and phone numbers are never stored by this logger."
+msgstr "به‌صورت پیش‌فرض غیرفعال است. حداکثر ۱۰۰ رویداد پالایش‌شده در یک گزینه بدون بارگذاری خودکار وردپرس نگهداری می‌شود. شناسه پذیرنده، توکن صورتحساب، Authority، شماره کارت، نام، ایمیل و شماره تلفن هرگز توسط این گزارش‌گیر ذخیره نمی‌شوند."
+
+msgid "Enable redacted gateway debug logging"
+msgstr "فعال‌کردن گزارش اشکال‌زدایی پالایش‌شده درگاه"
+
+msgid "Event"
+msgstr "رویداد"
+
+msgid "Level"
+msgstr "سطح"
+
+msgid "No debug events are stored."
+msgstr "هیچ رویداد اشکال‌زدایی ذخیره نشده است."
+
+msgid "Only redacted operational events are stored. The newest 100 entries are retained."
+msgstr "فقط رویدادهای عملیاتی پالایش‌شده ذخیره می‌شوند و ۱۰۰ مورد جدیدتر نگهداری خواهند شد."
+
+msgid "Time"
+msgstr "زمان"

@@ -1,0 +1,97 @@
+.ezinv-admin{max-width:1360px}.ezinv-admin *{box-sizing:border-box}.ezinv-admin-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:20px 0}.ezinv-admin-heading h1{font-size:28px;font-weight:800;margin:0 0 5px}.ezinv-admin-heading p{margin:0;color:#646970}.ezinv-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(270px,.5fr);gap:20px;align-items:start}.ezinv-card{background:#fff;border:1px solid #dcdcde;border-radius:16px;padding:22px;box-shadow:0 6px 22px rgba(0,0,0,.045)}.ezinv-card h2{margin:0 0 18px;font-size:20px}.ezinv-card h3{margin:0 0 12px}.ezinv-field{margin-bottom:18px}.ezinv-field label{display:block;font-weight:600;margin-bottom:6px}.ezinv-field input[type=text],.ezinv-field input[type=email],.ezinv-field input[type=tel],.ezinv-field input[type=number],.ezinv-field input[type=search],.ezinv-field textarea,.ezinv-products-box input[type=search]{width:100%;max-width:none;border-radius:9px;min-height:42px}.ezinv-products-box{border:1px solid #e0e2e5;background:#fafafa;border-radius:13px;padding:16px;margin-bottom:18px}.ezinv-search-wrap{position:relative}.ezinv-product-results{display:none;position:absolute;z-index:100;top:46px;right:0;left:0;background:#fff;border:1px solid #c3c4c7;border-radius:10px;box-shadow:0 12px 30px rgba(0,0,0,.12);max-height:320px;overflow:auto}.ezinv-product-result{display:flex;justify-content:space-between;align-items:center;gap:16px;width:100%;padding:11px 13px;border:0;border-bottom:1px solid #eee;background:#fff;text-align:start;cursor:pointer}.ezinv-product-result:hover,.ezinv-product-result:focus{background:#f6f7f7}.ezinv-result-name{font-weight:650}.ezinv-result-meta{font-size:12px;color:#646970;margin-top:3px}.ezinv-result-price{font-weight:700;white-space:nowrap}.ezinv-table-scroll{overflow:auto}.ezinv-items-table{width:100%;border-collapse:collapse;margin-top:12px;min-width:610px}.ezinv-items-table th,.ezinv-items-table td{padding:10px 8px;border-bottom:1px solid #e8e8e8;text-align:start;vertical-align:middle}.ezinv-items-table th{font-size:12px;color:#646970}.ezinv-empty-products{text-align:center;color:#777;padding:18px!important}.ezinv-item-qty{width:75px!important;min-height:34px!important}.ezinv-remove-item{border:0;background:#fbeaea;color:#b32d2e;border-radius:7px;padding:6px 9px;cursor:pointer}.ezinv-soft-warning{padding:12px;border-radius:9px;background:#fff8e5;border:1px solid #f0c36d}.ezinv-shipping-box{background:#eef8f1;border:1px solid #b8dfc2;border-radius:11px;padding:12px 14px;margin-bottom:14px}.ezinv-shipping-box p{margin:6px 0 0;color:#3c434a}.ezinv-summary{background:#1d2327;color:#fff;border-radius:12px;padding:15px;margin:0 0 18px}.ezinv-summary>div{display:flex;justify-content:space-between;gap:20px;padding:5px 0}.ezinv-summary-total{margin-top:7px;padding-top:11px!important;border-top:1px solid rgba(255,255,255,.18);font-size:17px}.ezinv-form-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.ezinv-submit{min-height:40px!important;padding:0 20px!important;border-radius:8px!important}.ezinv-side-card{position:sticky;top:42px}.ezinv-side-stat{background:#f6f7f7;border-radius:11px;padding:14px;margin-bottom:10px}.ezinv-side-stat span{display:block;color:#646970;font-size:12px}.ezinv-side-stat strong,.ezinv-side-stat code{display:block;margin-top:5px;font-size:16px}.ezinv-list-card{margin-top:20px}.ezinv-invoice-table{min-width:1050px}.ezinv-invoice-table td,.ezinv-invoice-table th{vertical-align:middle}.ezinv-invoice-table small{color:#777}.ezinv-actions{display:flex;gap:5px;align-items:center;flex-wrap:wrap}.ezinv-inline-form{display:inline-block;margin:0}.ezinv-delete-form button{color:#b32d2e!important;border-color:#e7a5a5!important}.ezinv-admin-status{display:inline-block;border-radius:999px;padding:4px 9px;font-size:11px;font-weight:700;background:#f0f0f1;color:#3c434a}.ezinv-admin-status-paid{background:#dff3e4;color:#116329}.ezinv-admin-status-failed,.ezinv-admin-status-cancelled{background:#fbeaea;color:#8a2424}.ezinv-admin-status-waiting_payment,.ezinv-admin-status-verifying{background:#fff0d4;color:#7a4b00}.ezinv-settings-card{max-width:900px}.ezinv-settings-card select{min-width:300px}.ezinv-service-note{max-width:900px;margin-top:20px}.ezinv-service-note a{text-decoration:none}@media(max-width:960px){.ezinv-grid{grid-template-columns:1fr}.ezinv-side-card{position:static}.ezinv-form-grid{grid-template-columns:1fr}.ezinv-admin-heading{align-items:flex-start;flex-direction:column}}
+
+/* Mobile responsive admin improvements - v1.5.1 */
+.ezinv-admin .regular-text,
+.ezinv-admin textarea,
+.ezinv-admin select,
+.ezinv-admin input[type="number"],
+.ezinv-admin input[type="text"],
+.ezinv-admin input[type="email"],
+.ezinv-admin input[type="tel"],
+.ezinv-admin input[type="search"]{
+    box-sizing:border-box;
+}
+.ezinv-items-table-wrap,
+.ezinv-table-scroll{
+    width:100%;
+    -webkit-overflow-scrolling:touch;
+}
+@media (max-width:782px){
+    .ezinv-admin{
+        margin-right:0;
+        margin-left:0;
+        width:100%;
+    }
+    .ezinv-card{
+        padding:14px;
+        border-radius:12px;
+    }
+    .ezinv-admin-heading h1{
+        font-size:22px;
+    }
+    .ezinv-form-grid{
+        display:block;
+    }
+    .ezinv-form-grid .ezinv-field{
+        width:100%;
+    }
+    .ezinv-items-table{
+        min-width:0;
+        border:0;
+        display:block;
+    }
+    .ezinv-items-table thead{
+        display:none;
+    }
+    .ezinv-items-table tbody,
+    .ezinv-items-table tr,
+    .ezinv-items-table td{
+        display:block;
+        width:100%;
+    }
+    .ezinv-items-table tr{
+        margin-bottom:14px;
+        background:#fff;
+        border:1px solid #ddd;
+        border-radius:12px;
+        padding:10px;
+    }
+    .ezinv-items-table td{
+        border:0;
+        padding:8px 4px;
+    }
+    .ezinv-items-table td:before{
+        content:attr(data-label);
+        display:block;
+        font-size:12px;
+        font-weight:600;
+        color:#646970;
+        margin-bottom:4px;
+    }
+    .ezinv-item-qty{
+        width:100%!important;
+    }
+    .ezinv-summary>div{
+        flex-direction:column;
+        gap:5px;
+    }
+    .ezinv-submit,
+    .ezinv-admin .button-primary{
+        width:100%;
+        text-align:center;
+        min-height:44px;
+    }
+    .ezinv-search-wrap{
+        width:100%;
+    }
+}
+@media (max-width:480px){
+    .ezinv-product-result{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:8px;
+    }
+    .ezinv-admin-heading{
+        margin:10px 0;
+    }
+}

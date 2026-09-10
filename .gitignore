@@ -1,0 +1,23 @@
+# WordPress
+wp-config.php
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Composer
+vendor/
+
+# Node
+node_modules/
+
+# Temporary
+*.tmp
+*.zip
