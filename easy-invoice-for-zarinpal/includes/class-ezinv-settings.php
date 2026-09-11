@@ -159,9 +159,17 @@ final class EZINV_Settings {
 		if ( ! is_scalar( $value ) ) {
 			return 0;
 		}
-		$value = preg_replace( '/[^0-9]/', '', (string) $value );
-		if ( ! is_string( $value ) || '' === $value ) {
+		$value = trim( (string) $value );
+		if ( '' === $value ) {
 			return 0;
+		}
+		if ( ! ctype_digit( $value ) ) {
+			add_settings_error(
+				self::OPT_FIXED_SHIPPING,
+				'ezinv_shipping_invalid',
+				esc_html__( 'The fixed shipping amount must be a non-negative whole number.', 'easy-invoice-for-zarinpal' )
+			);
+			return (int) get_option( self::OPT_FIXED_SHIPPING, 0 );
 		}
 		$max_toman = intdiv( PHP_INT_MAX, 10 );
 		if ( (float) $value > $max_toman ) {

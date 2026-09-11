@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Easy Invoice for ZarinPal
  * Description: Create secure payment invoices with custom amounts or WooCommerce products and accept payments through ZarinPal.
- * Version: 1.5.7
+ * Version: 1.5.8
  * Requires at least: 6.3
  * Requires PHP: 7.4
  * Author: Taha Farzaneh
@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'EZINV_VERSION', '1.5.7' );
+define( 'EZINV_VERSION', '1.5.8' );
 define( 'EZINV_DB_VERSION', '1.5.0' );
 define( 'EZINV_PLUGIN_FILE', __FILE__ );
 define( 'EZINV_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );

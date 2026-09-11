@@ -3,7 +3,7 @@ Contributors: tahanoa
 Tags: invoice, payment, zarinpal, payment-link, ecommerce
 Requires at least: 6.3
 Tested up to: 7.1
-Stable tag: 1.5.7
+Stable tag: 1.5.8
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -113,6 +113,13 @@ Depending on invoice fields used, the WordPress database can store customer name
 Not by default. In **Invoices > Settings**, administrators can explicitly enable deletion of plugin settings and invoice tables when the plugin is deleted.
 
 == Changelog ==
+
+= 1.5.8 =
+
+* Added a response-size limit to gateway API requests.
+* Rejected malformed or negative fixed-shipping values instead of silently changing them.
+* Validated Inquiry statuses against ZarinPal's documented status values.
+* Improved database-write error handling for payment status changes, Inquiry, and invoice deletion.
 
 = 1.5.7 =
 

@@ -285,7 +285,7 @@ final class EZINV_Invoice {
 		}
 
 		if ( 'NOK' === strtoupper( $status ) ) {
-			EZINV_DB::update(
+			$updated = EZINV_DB::update(
 				$invoice->id,
 				array(
 					'status'         => 'cancelled',
@@ -294,6 +294,10 @@ final class EZINV_Invoice {
 				),
 				array( '%s', '%s', '%s' )
 			);
+			if ( ! $updated ) {
+				EZINV_Logger::log( 'error', 'Could not persist cancelled payment state.', array( 'invoice_id' => (int) $invoice->id, 'operation' => 'callback' ) );
+				self::redirect_to_invoice( $invoice->token, 'verify_pending' );
+			}
 			self::redirect_to_invoice( $invoice->token, 'cancelled' );
 		}
 
@@ -345,7 +349,7 @@ final class EZINV_Invoice {
 				return true;
 			}
 
-			EZINV_DB::update(
+			$marked_verifying = EZINV_DB::update(
 				$invoice->id,
 				array(
 					'status'     => 'verifying',
@@ -353,10 +357,13 @@ final class EZINV_Invoice {
 				),
 				array( '%s', '%s' )
 			);
+			if ( ! $marked_verifying ) {
+				return new WP_Error( 'ezinv_db_update_failed', esc_html__( 'The invoice payment state could not be updated. Please try again.', 'easy-invoice-for-zarinpal' ) );
+			}
 
 			$result = EZINV_Gateway::verify_payment( $invoice );
 			if ( is_wp_error( $result ) ) {
-				EZINV_DB::update(
+				$restored = EZINV_DB::update(
 					$invoice->id,
 					array(
 						'status'         => 'waiting_payment',
@@ -365,6 +372,9 @@ final class EZINV_Invoice {
 					),
 					array( '%s', '%s', '%s' )
 				);
+				if ( ! $restored ) {
+					EZINV_Logger::log( 'error', 'Could not restore invoice state after a verification error.', array( 'invoice_id' => (int) $invoice->id, 'operation' => 'verify' ) );
+				}
 				return $result;
 			}
 
@@ -393,7 +403,7 @@ final class EZINV_Invoice {
 				return true;
 			}
 
-			EZINV_DB::update(
+			$failed_updated = EZINV_DB::update(
 				$invoice->id,
 				array(
 					'status'         => 'failed',
@@ -402,6 +412,10 @@ final class EZINV_Invoice {
 				),
 				array( '%s', '%s', '%s' )
 			);
+			if ( ! $failed_updated ) {
+				EZINV_Logger::log( 'error', 'Could not persist failed verification state.', array( 'invoice_id' => (int) $invoice->id, 'operation' => 'verify', 'gateway_code' => $code ) );
+				return new WP_Error( 'ezinv_db_update_failed', esc_html__( 'The invoice payment state could not be updated. Please try again.', 'easy-invoice-for-zarinpal' ) );
+			}
 			EZINV_Logger::log( 'warning', 'Gateway rejected invoice verification.', array( 'invoice_id' => (int) $invoice->id, 'operation' => 'verify', 'gateway_code' => $code ) );
 			return new WP_Error( 'ezinv_gateway_rejected', EZINV_Gateway::error_message( $result, esc_html__( 'Payment could not be verified.', 'easy-invoice-for-zarinpal' ) ) );
 		} finally {

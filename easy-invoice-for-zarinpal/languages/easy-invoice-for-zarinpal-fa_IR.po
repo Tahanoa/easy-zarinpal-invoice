@@ -551,3 +551,15 @@ msgstr "فقط رویدادهای عملیاتی پالایش‌شده ذخیر�
 
 msgid "Time"
 msgstr "زمان"
+
+msgid "The fixed shipping amount must be a non-negative whole number."
+msgstr "مبلغ ثابت حمل‌ونقل باید یک عدد صحیح و نامنفی باشد."
+
+msgid "The gateway status could not be saved."
+msgstr "وضعیت درگاه ذخیره نشد."
+
+msgid "The invoice could not be deleted."
+msgstr "صورتحساب حذف نشد."
+
+msgid "The invoice payment state could not be updated. Please try again."
+msgstr "وضعیت پرداخت صورتحساب به‌روزرسانی نشد. لطفاً دوباره تلاش کنید."

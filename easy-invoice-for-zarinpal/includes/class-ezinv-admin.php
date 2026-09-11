@@ -617,7 +617,9 @@ final class EZINV_Admin {
 		if ( ! $id || ! EZINV_DB::get_by_id( $id ) ) {
 			self::redirect_with_notice( __( 'Invoice not found.', 'easy-invoice-for-zarinpal' ), 'error' );
 		}
-		EZINV_DB::delete( $id );
+		if ( ! EZINV_DB::delete( $id ) ) {
+			self::redirect_with_notice( __( 'The invoice could not be deleted.', 'easy-invoice-for-zarinpal' ), 'error' );
+		}
 		self::redirect_with_notice( __( 'Invoice deleted.', 'easy-invoice-for-zarinpal' ), 'success' );
 	}
 
@@ -640,21 +642,25 @@ final class EZINV_Admin {
 			self::redirect_with_notice( $result->get_error_message(), 'error' );
 		}
 
-		$status = isset( $result['data']['status'] ) ? sanitize_key( (string) $result['data']['status'] ) : '';
-		if ( '' === $status ) {
+		$status         = isset( $result['data']['status'] ) ? strtoupper( sanitize_key( (string) $result['data']['status'] ) ) : '';
+		$allowed_status = array( 'VERIFIED', 'PAID', 'IN_BANK', 'FAILED', 'REVERSED' );
+		if ( ! in_array( $status, $allowed_status, true ) ) {
 			self::redirect_with_notice( EZINV_Gateway::error_message( $result, __( 'The gateway inquiry returned an invalid response.', 'easy-invoice-for-zarinpal' ) ), 'error' );
 		}
 
-		EZINV_DB::update(
+		$updated = EZINV_DB::update(
 			$id,
 			array(
-				'gateway_status' => strtoupper( $status ),
+				'gateway_status' => $status,
 				'updated_at'     => current_time( 'mysql' ),
 			),
 			array( '%s', '%s' )
 		);
+		if ( ! $updated ) {
+			self::redirect_with_notice( __( 'The gateway status could not be saved.', 'easy-invoice-for-zarinpal' ), 'error' );
+		}
 		self::redirect_with_notice( /* translators: %s: gateway status. */
-					sprintf( __( 'Gateway inquiry status: %s. Inquiry does not verify or mark a transaction paid.', 'easy-invoice-for-zarinpal' ), strtoupper( $status ) ), 'success' );
+					sprintf( __( 'Gateway inquiry status: %s. Inquiry does not verify or mark a transaction paid.', 'easy-invoice-for-zarinpal' ), $status ), 'success' );
 	}
 
 	/**

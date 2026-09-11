@@ -122,15 +122,16 @@ final class EZINV_Gateway {
 		$response = wp_remote_post(
 			$url,
 			array(
-				'timeout'     => 25,
-				'redirection' => 0,
-				'headers'     => array(
+				'timeout'             => 25,
+				'redirection'         => 0,
+				'limit_response_size' => 1048576,
+				'headers'             => array(
 					'Accept'       => 'application/json',
 					'Content-Type' => 'application/json',
 					'User-Agent'   => 'Easy-Invoice-for-ZarinPal/' . EZINV_VERSION,
 				),
-				'body'        => wp_json_encode( $payload ),
-				'data_format' => 'body',
+				'body'                => wp_json_encode( $payload ),
+				'data_format'         => 'body',
 			)
 		);
 
